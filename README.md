@@ -1,0 +1,1 @@
+This is the project where we create a smart news application. 
