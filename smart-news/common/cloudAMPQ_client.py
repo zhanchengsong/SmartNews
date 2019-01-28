@@ -14,12 +14,12 @@ class CloudAMPQClient :
 
     def sendMessage(self,message):
         self.channel.basic_publish(exchange='', routing_key=self.queue_name, body=json.dumps(message))
-        print(f"[X] Sent message to {self.queue_name} with {message}")
+        #print(f"[X] Sent message to {self.queue_name} with {message}")
 
     def getMessage(self):
         method_frame,header_frame, body=self.channel.basic_get(self.queue_name)
         if method_frame:
-            print(f"[o] Received message from {self.queue_name} with message {body}")
+            #print(f"[o] Received message from {self.queue_name} with message {body}")
             self.channel.basic_ack(method_frame.delivery_tag)
             return json.loads(body)
 

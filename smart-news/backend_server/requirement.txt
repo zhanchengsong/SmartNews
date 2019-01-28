@@ -3,3 +3,5 @@ pymongo
 pika
 requests
 redis
+lxml
+goose-extractor
