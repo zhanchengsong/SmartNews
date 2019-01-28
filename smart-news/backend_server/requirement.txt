@@ -5,3 +5,5 @@ requests
 redis
 lxml
 goose-extractor
+python-dateutil
+sklearn

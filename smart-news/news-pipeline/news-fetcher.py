@@ -22,6 +22,8 @@ def handle_message(msg):
         print ('message is broken')
         return
 
+    print  ("[News-Fetcher] RECV MSG : ")
+    print (msg)
     task = msg
     g = Goose()
     article = g.extract(url=task['url'])
@@ -36,6 +38,7 @@ while True:
     # fetch msg from queue
     if scrape_news_queue_client is not None:
         msg = scrape_news_queue_client.getMessage()
+
         if msg is not None:
             # Handle message
             try:

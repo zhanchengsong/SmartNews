@@ -19,15 +19,18 @@ SCRAPE_NEWS_TASK_QUEUE_NAME = 'smart-news-scrape-task-queue'
 NEWS_TIMEOUT_IN_SECONDS = 3600 * 24 
 SLEEP_IN_SECONDS = 600
 
-NEWS_SOURCES = [
-    'cnn',
-    'cbc-news',
-]
+
+
+
+
+
+
 redis_client = redis.StrictRedis(REDIS_HOST, REDIS_PORT)
 CloudAMPQ_client = CloudAMPQClient(SCRAPE_NEWS_TASK_QUEUE_URL,SCRAPE_NEWS_TASK_QUEUE_NAME)
 
 while True:
-    news_list = news_api_client.getNewsFromSource(NEWS_SOURCES)
+    src_list = news_api_client.getSources()
+    news_list = news_api_client.getNewsFromSource(src_list)
     num_of_new = 0
     for news in news_list:
         news_digest = hashlib.md5(news['title'].encode('utf-8')).digest().encode('base 64')
@@ -39,8 +42,9 @@ while True:
                 news['publishedAt'] = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
             print(news)
             redis_client.set(news_digest, json.dumps(news))
-            redis_client.expire(news_digest, NEWS_TIMEOUT_IN_SECONDS)   
-
+            redis_client.expire(news_digest, NEWS_TIMEOUT_IN_SECONDS)
+            print("[News-Monitor] SEND MSG : ")
+            print(news)
             CloudAMPQ_client.sendMessage(news)
     print ("Fetched %d new news ." % num_of_new)
     CloudAMPQ_client.sleep(SLEEP_IN_SECONDS)
