@@ -28,7 +28,8 @@ def handle_message(msg):
     g = Goose()
     article = g.extract(url=task['url'])
 
-    print (article.cleaned_text)
+    print ("GOOSE TEXT: " + article.cleaned_text)
+
 
     task['text'] = article.cleaned_text
 

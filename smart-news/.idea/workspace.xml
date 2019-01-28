@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe1bc171-727b-4a89-a4e3-4afd6a58e27a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/news-pipeline/news_deduper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend_server/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/backend_server/dump.rdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend_server/requirement.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend_server/requirement.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/mongodb_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/mongodb_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/news_api_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/news_api_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-pipeline/news-fetcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-pipeline/news-fetcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-pipeline/news-monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-pipeline/news-monitor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NewsCard/NewsCard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NewsCard/NewsCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NewsPanel/NewsPanel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-pipeline/start_pipelines.sh" beforeDir="false" afterPath="$PROJECT_DIR$/news-pipeline/start_pipelines.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,18 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NewsPanel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-server/client/src/NewsPanel/NewsPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-              <folding>
-                <element signature="e#29#72#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="rpc_client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-server/server/rpc_client/rpc_client.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,14 +41,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news-fetcher.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news-fetcher.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-pipeline/news-fetcher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="242">
+              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start_pipelines.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/news-pipeline/start_pipelines.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -98,8 +77,8 @@
       <file leaf-file-name="news_deduper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-pipeline/news_deduper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+            <state relative-caret-position="43">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -181,11 +160,12 @@
         <option value="$PROJECT_DIR$/web-server/client/src/NewsPanel/NewsPanel.js" />
         <option value="$PROJECT_DIR$/web-server/server/rpc_client/rpc_client.js" />
         <option value="$PROJECT_DIR$/backend_server/requirement.txt" />
-        <option value="$PROJECT_DIR$/news-pipeline/news-fetcher.py" />
         <option value="$PROJECT_DIR$/common/mongodb_client.py" />
         <option value="$PROJECT_DIR$/news-pipeline/news_deduper.py" />
         <option value="$PROJECT_DIR$/common/news_api_client.py" />
         <option value="$PROJECT_DIR$/news-pipeline/news-monitor.py" />
+        <option value="$PROJECT_DIR$/news-pipeline/news-fetcher.py" />
+        <option value="$PROJECT_DIR$/news-pipeline/start_pipelines.sh" />
       </list>
     </option>
   </component>
@@ -2510,12 +2490,6 @@
             <path>
               <item name="smart-news" type="b2602c69:ProjectViewProjectNode" />
               <item name="smart-news" type="462c0819:PsiDirectoryNode" />
-              <item name="news-pipeline" type="462c0819:PsiDirectoryNode" />
-              <item name="scrappers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smart-news" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-news" type="462c0819:PsiDirectoryNode" />
               <item name="web-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2657,14 +2631,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="17" width="1400" height="961" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32807216" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32807216" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32807216" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32807216" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24928571" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -2880,16 +2855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news-pipeline/news_deduper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="25" lean-forward="true" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/news_api_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -2910,13 +2875,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news-pipeline/news_deduper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/news-pipeline/news-fetcher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="242">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-pipeline/start_pipelines.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
