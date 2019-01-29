@@ -5,3 +5,15 @@ var client = jayson.client.http({
     hostname: 'localhost'
 });
 
+function getNews(callback) {
+    client.request('getNews',[],function(err, response) {
+        if (err) throw err;
+        else {
+            console.log("response")
+            callback(response)
+        }
+    })
+}
+module.exports = {
+    getNews: getNews
+}

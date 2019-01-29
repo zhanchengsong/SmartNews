@@ -32,14 +32,18 @@ class NewsPanel extends React.Component{
     loadMoreNews() {
          let request = new Request('http://localhost:3000/news', {
              method: 'GET',
-             cache: false
+             cache: 'no-cache'
          })
 
         fetch(request)
             .then ((res) => res.json())
             .then(news => {
+                console.log(news)
+                var newsObj = JSON.parse ( news['result'] )
+                console.log(newsObj)
                 this.setState({
-                    news: this.state.news? this.state.news.concat(news) : news
+
+                    news: this.state.news? this.state.news.concat(newsObj) : newsObj
                 })
             })
     }

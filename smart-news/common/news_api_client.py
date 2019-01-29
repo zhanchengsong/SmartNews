@@ -33,7 +33,8 @@ def getNewsFromSource(sources = ['cnn','cbc-news','abc-news','cnbc'], pageSize=1
 
     init_param = {
         'apiKey': NEWS_API_KEY,
-        'sources': sourcesParam
+        'sources': sourcesParam,
+        'language' : 'en'
     }
     init_res = requests.get(buildUrl(), params = init_param)
 
