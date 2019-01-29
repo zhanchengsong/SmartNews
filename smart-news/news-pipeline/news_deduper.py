@@ -8,6 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'common'))
 
 from cloudAMPQ_client import CloudAMPQClient
+import recommandation_client
 import mongodb_client
 DEDUPE_NEWS_TASK_QUEUE_URL = 'amqp://asvjopom:hVP3aTrgb5JV3ZRMggobe2d8E2Vb-DW_@cat.rmq.cloudamqp.com/asvjopom'
 DEDUPE_NEWS_TASK_QUEUE_NAME = "smart-news-dedupe-news-task-queue"
@@ -54,9 +55,9 @@ def handle_message(msg):
 
     task['publishedAt'] = parser.parse(task['publishedAt'])
     title = task['title']
-        # if title is not None:
-        #     topic = news_topic_modeling_service_client.classify(title)
-        #     task['class'] = topic
+    if title is not None:
+        topic = recommandation_client.classify(title)
+        task['class'] = topic
 
     db[NEWS_TABLE_NAME].replace_one({'digest': task['digest']}, task, upsert=True)
 
