@@ -1,7 +1,7 @@
 import requests
 import json
 NEWS_API_ENDPOINT = "https://newsapi.org/v2/"
-NEWS_API_KEY= '3a95f27a8a8b489d8934e5021ba58391'
+NEWS_API_KEY= '5fa61f5e49924668bcc4349e356737f6'
 ARTICLES = 'everything'
 SOURCES = ''
 
@@ -36,6 +36,8 @@ def getNewsFromSource(sources = ['cnn','cbc-news','abc-news','cnbc'], pageSize=1
         'sources': sourcesParam
     }
     init_res = requests.get(buildUrl(), params = init_param)
+
+    print(json.loads(init_res.text))
     totalCount = json.loads(init_res.text)["totalResults"]
     totalPages = totalCount / pageSize + 1
     print("Initiating Database with " + str(totalCount) + " news")
@@ -48,7 +50,7 @@ def getNewsFromSource(sources = ['cnn','cbc-news','abc-news','cnbc'], pageSize=1
         'page': 1
     }
 
-    for pageNum in range(1, totalPages):
+    for pageNum in range(1, 2):
         print "Getting page %d/%d pages" % (pageNum, totalPages)
         params['page'] = pageNum
         response = requests.get(buildUrl(), params = params)

@@ -17,7 +17,7 @@ SCRAPE_NEWS_TASK_QUEUE_URL = 'amqp://gvmlmvjt:LfyDfz6Ago5EYhNGMOgv4EFhC5DGjG6D@s
 SCRAPE_NEWS_TASK_QUEUE_NAME = 'smart-news-scrape-task-queue'
 
 NEWS_TIMEOUT_IN_SECONDS = 3600 * 24 
-SLEEP_IN_SECONDS = 600
+SLEEP_IN_SECONDS = 1800
 
 
 
@@ -25,7 +25,7 @@ redis_client = redis.StrictRedis(REDIS_HOST, REDIS_PORT)
 CloudAMPQ_client = CloudAMPQClient(SCRAPE_NEWS_TASK_QUEUE_URL,SCRAPE_NEWS_TASK_QUEUE_NAME)
 
 while True:
-    src_list = news_api_client.getSources()
+    #src_list = news_api_client.getSources()
     news_list = news_api_client.getNewsFromSource()
     num_of_new = 0
     for news in news_list:

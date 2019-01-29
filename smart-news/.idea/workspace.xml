@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe1bc171-727b-4a89-a4e3-4afd6a58e27a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/common/news_api_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/news_api_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-pipeline/news-fetcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-pipeline/news-fetcher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-pipeline/news-monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-pipeline/news-monitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news-pipeline/news_deduper.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-pipeline/news_deduper.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,9 +17,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/smart_news$news_deduper.coverage" NAME="news_deduper Coverage Results" MODIFIED="1548725619048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news-pipeline" />
-    <SUITE FILE_PATH="coverage/smart_news$news_fetcher.coverage" NAME="news-fetcher Coverage Results" MODIFIED="1548725616507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news-pipeline" />
-    <SUITE FILE_PATH="coverage/smart_news$news_monitor.coverage" NAME="news-monitor Coverage Results" MODIFIED="1548725697772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news-pipeline" />
+    <SUITE FILE_PATH="coverage/smart_news$news_deduper.coverage" NAME="news_deduper Coverage Results" MODIFIED="1548730595115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news-pipeline" />
+    <SUITE FILE_PATH="coverage/smart_news$news_fetcher.coverage" NAME="news-fetcher Coverage Results" MODIFIED="1548730361060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news-pipeline" />
+    <SUITE FILE_PATH="coverage/smart_news$news_monitor.coverage" NAME="news-monitor Coverage Results" MODIFIED="1548730347815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news-pipeline" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -77,8 +77,8 @@
       <file leaf-file-name="news_deduper.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news-pipeline/news_deduper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+            <state relative-caret-position="304">
+              <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -101,8 +101,8 @@
       <file leaf-file-name="news-monitor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-pipeline/news-monitor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            <state relative-caret-position="381">
+              <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -113,8 +113,8 @@
       <file leaf-file-name="news_api_client.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/news_api_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
+            <state relative-caret-position="279">
+              <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -161,11 +161,11 @@
         <option value="$PROJECT_DIR$/web-server/server/rpc_client/rpc_client.js" />
         <option value="$PROJECT_DIR$/backend_server/requirement.txt" />
         <option value="$PROJECT_DIR$/common/mongodb_client.py" />
-        <option value="$PROJECT_DIR$/news-pipeline/news_deduper.py" />
         <option value="$PROJECT_DIR$/news-pipeline/start_pipelines.sh" />
-        <option value="$PROJECT_DIR$/news-pipeline/news-monitor.py" />
         <option value="$PROJECT_DIR$/news-pipeline/news-fetcher.py" />
+        <option value="$PROJECT_DIR$/news-pipeline/news-monitor.py" />
         <option value="$PROJECT_DIR$/common/news_api_client.py" />
+        <option value="$PROJECT_DIR$/news-pipeline/news_deduper.py" />
       </list>
     </option>
   </component>
@@ -2540,7 +2540,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.news-fetcher">
+  <component name="RunManager" selected="Python.news_deduper">
     <configuration name="news-fetcher" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smart-news" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -2605,9 +2605,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.news-monitor" />
         <item itemvalue="Python.news_deduper" />
         <item itemvalue="Python.news-fetcher" />
+        <item itemvalue="Python.news-monitor" />
       </list>
     </recent_temporary>
   </component>
@@ -2638,9 +2638,9 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32807216" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32807216" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32807216" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24928571" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24928571" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" />
@@ -2862,26 +2862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news-pipeline/news-monitor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/news_api_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="51" column="63" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news-pipeline/news-fetcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -2892,10 +2872,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/news_api_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-pipeline/news-monitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/news-pipeline/news_deduper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        <state relative-caret-position="304">
+          <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
