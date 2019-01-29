@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe1bc171-727b-4a89-a4e3-4afd6a58e27a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/common/news_api_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/news_api_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recommendation_model_service/training/news_cnn_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recommendation_model_service/training/news_model_trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_server/requirement.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend_server/requirement.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news-pipeline/news-monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-pipeline/news-monitor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-pipeline/news_deduper.py" beforeDir="false" afterPath="$PROJECT_DIR$/news-pipeline/news_deduper.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,34 +20,18 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/smart_news$news_deduper.coverage" NAME="news_deduper Coverage Results" MODIFIED="1548730595115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news-pipeline" />
+    <SUITE FILE_PATH="coverage/smart_news$news_model_trainer.coverage" NAME="news_model_trainer Coverage Results" MODIFIED="1548789720026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommendation_model_service/training" />
     <SUITE FILE_PATH="coverage/smart_news$news_fetcher.coverage" NAME="news-fetcher Coverage Results" MODIFIED="1548730361060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news-pipeline" />
     <SUITE FILE_PATH="coverage/smart_news$news_monitor.coverage" NAME="news-monitor Coverage Results" MODIFIED="1548730347815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news-pipeline" />
+    <SUITE FILE_PATH="coverage/smart_news$news_cnn_model.coverage" NAME="news_cnn_model Coverage Results" MODIFIED="1548789716385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommendation_model_service/training" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rpc_client.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-server/server/rpc_client/rpc_client.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirement.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend_server/requirement.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="news-fetcher.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-pipeline/news-fetcher.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="148">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -53,32 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start_pipelines.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-pipeline/start_pipelines.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cnn_scraper.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-pipeline/scrappers/cnn_scraper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news_deduper.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news_deduper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-pipeline/news_deduper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+            <state relative-caret-position="199">
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -86,11 +51,49 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="news_model_trainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommendation_model_service/training/news_model_trainer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="news_cnn_model.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/recommendation_model_service/training/news_cnn_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirement.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend_server/requirement.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="labeled_news.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommendation_model_service/training/data/labeled_news.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" rowLines="3" />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="mongodb_client.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/mongodb_client.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -101,13 +104,18 @@
       <file leaf-file-name="news-monitor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news-pipeline/news-monitor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+            <state relative-caret-position="645">
+              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vocab_procesor_save_file" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommendation_model_service/training/model/vocab_procesor_save_file">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="news_api_client.py" pinned="false" current-in-tab="false">
@@ -122,15 +130,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select_connection.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pika/adapters/select_connection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="989" column="34" lean-forward="true" selection-start-line="989" selection-start-column="34" selection-end-line="989" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -138,6 +137,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -159,13 +159,15 @@
         <option value="$PROJECT_DIR$/web-server/server/routes/news.js" />
         <option value="$PROJECT_DIR$/web-server/client/src/NewsPanel/NewsPanel.js" />
         <option value="$PROJECT_DIR$/web-server/server/rpc_client/rpc_client.js" />
-        <option value="$PROJECT_DIR$/backend_server/requirement.txt" />
         <option value="$PROJECT_DIR$/common/mongodb_client.py" />
         <option value="$PROJECT_DIR$/news-pipeline/start_pipelines.sh" />
         <option value="$PROJECT_DIR$/news-pipeline/news-fetcher.py" />
-        <option value="$PROJECT_DIR$/news-pipeline/news-monitor.py" />
         <option value="$PROJECT_DIR$/common/news_api_client.py" />
         <option value="$PROJECT_DIR$/news-pipeline/news_deduper.py" />
+        <option value="$PROJECT_DIR$/backend_server/requirement.txt" />
+        <option value="$PROJECT_DIR$/recommendation_model_service/training/news_model_trainer.py" />
+        <option value="$PROJECT_DIR$/news-pipeline/news-monitor.py" />
+        <option value="$PROJECT_DIR$/recommendation_model_service/training/news_cnn_model.py" />
       </list>
     </option>
   </component>
@@ -2480,23 +2482,25 @@
             <path>
               <item name="smart-news" type="b2602c69:ProjectViewProjectNode" />
               <item name="smart-news" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smart-news" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-news" type="462c0819:PsiDirectoryNode" />
               <item name="news-pipeline" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smart-news" type="b2602c69:ProjectViewProjectNode" />
               <item name="smart-news" type="462c0819:PsiDirectoryNode" />
-              <item name="web-server" type="462c0819:PsiDirectoryNode" />
+              <item name="recommendation_model_service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smart-news" type="b2602c69:ProjectViewProjectNode" />
               <item name="smart-news" type="462c0819:PsiDirectoryNode" />
-              <item name="web-server" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="recommendation_model_service" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smart-news" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smart-news" type="462c0819:PsiDirectoryNode" />
+              <item name="recommendation_model_service" type="462c0819:PsiDirectoryNode" />
+              <item name="training" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -2521,11 +2525,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/common" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/recommendation_model_service/training" />
       <recent name="$PROJECT_DIR$/src/App" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/recommendation_model_service/training/data" />
+      <recent name="$PROJECT_DIR$/common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -2540,7 +2546,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.news_deduper">
+  <component name="RunManager" selected="Python.news_model_trainer">
     <configuration name="news-fetcher" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smart-news" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -2579,6 +2585,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="news_cnn_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="smart-news" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recommendation_model_service/training" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recommendation_model_service/training/news_cnn_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="news_deduper" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="smart-news" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -2598,13 +2623,36 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="news_model_trainer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="smart-news" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recommendation_model_service/training" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recommendation_model_service/training/news_model_trainer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.news_deduper" />
       <item itemvalue="Python.news-fetcher" />
       <item itemvalue="Python.news-monitor" />
+      <item itemvalue="Python.news_cnn_model" />
+      <item itemvalue="Python.news_model_trainer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.news_model_trainer" />
+        <item itemvalue="Python.news_cnn_model" />
         <item itemvalue="Python.news_deduper" />
         <item itemvalue="Python.news-fetcher" />
         <item itemvalue="Python.news-monitor" />
@@ -2638,9 +2686,9 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32807216" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32807216" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32807216" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24928571" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24928571" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" />
@@ -2814,13 +2862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend_server/requirement.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pika/adapters/blocking_connection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -2831,7 +2872,7 @@
     <entry file="file://$PROJECT_DIR$/news-pipeline/scrappers/cnn_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -2841,21 +2882,21 @@
     <entry file="file:///usr/local/Cellar/python@2/2.7.15_1/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/pika/adapters/select_connection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
-          <caret line="989" column="34" lean-forward="true" selection-start-line="989" selection-start-column="34" selection-end-line="989" selection-end-column="34" />
+          <caret line="989" column="34" selection-start-line="989" selection-start-column="34" selection-end-line="989" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/news-pipeline/start_pipelines.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/mongodb_client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -2865,7 +2906,7 @@
     <entry file="file://$PROJECT_DIR$/news-pipeline/news-fetcher.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -2882,23 +2923,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/news-pipeline/news_deduper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommendation_model_service/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommendation_model_service/training/news_cnn_model">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommendation_model_service/training/data/labeled_news.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend_server/requirement.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/news-pipeline/news-monitor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+        <state relative-caret-position="645">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news-pipeline/news_deduper.py">
+    <entry file="file://$PROJECT_DIR$/recommendation_model_service/training/model/vocab_procesor_save_file">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommendation_model_service/training/news_model_trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        <state relative-caret-position="450">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommendation_model_service/training/news_cnn_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>

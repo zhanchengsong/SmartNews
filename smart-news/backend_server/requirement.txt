@@ -7,3 +7,6 @@ lxml
 goose-extractor
 python-dateutil
 sklearn
+pandas
+tensorflow
+
