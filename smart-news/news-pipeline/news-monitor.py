@@ -21,19 +21,15 @@ SLEEP_IN_SECONDS = 600
 
 
 
-
-
-
-
 redis_client = redis.StrictRedis(REDIS_HOST, REDIS_PORT)
 CloudAMPQ_client = CloudAMPQClient(SCRAPE_NEWS_TASK_QUEUE_URL,SCRAPE_NEWS_TASK_QUEUE_NAME)
 
 while True:
     src_list = news_api_client.getSources()
-    news_list = news_api_client.getNewsFromSource(src_list)
+    news_list = news_api_client.getNewsFromSource()
     num_of_new = 0
     for news in news_list:
-        news_digest = hashlib.md5(news['title'].encode('utf-8')).digest().encode('base 64')
+        news_digest = hashlib.md5(news['title'].encode('utf-8')).digest().encode('base64')
         if redis_client.get(news_digest) is None:
             num_of_new = num_of_new + 1 
             news['digest'] = news_digest

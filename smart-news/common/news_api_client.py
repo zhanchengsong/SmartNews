@@ -27,24 +27,37 @@ def getSources(country = 'us', language='en'):
 
 
 
-def getNewsFromSource(sources = ['cnn=news'], sortBy = 'popularity'):
+def getNewsFromSource(sources = ['cnn','cbc-news','abc-news','cnbc'], pageSize=100):
     articles = [] 
     sourcesParam = ','.join(sources)
+
+    init_param = {
+        'apiKey': NEWS_API_KEY,
+        'sources': sourcesParam
+    }
+    init_res = requests.get(buildUrl(), params = init_param)
+    totalCount = json.loads(init_res.text)["totalResults"]
+    totalPages = totalCount / pageSize + 1
+    print("Initiating Database with " + str(totalCount) + " news")
+
+
     params = {
         'apiKey': NEWS_API_KEY,
-        'sources' : sources,
-        'sortBy' : sortBy
+        'sources' : sourcesParam,
+        'pageSize' : pageSize,
+        'page': 1
     }
-    
-    response = requests.get(buildUrl(), params = params)
-    
-    res_json = json.loads(response.text)
 
-    if (res_json is not None and 
-        res_json['status'] == 'ok'): 
-         #populate news
-        # for news in res_json['articles']:
-        # # news['source'] = res_json['sources']
-        #     print(news['source'])
-        articles.extend(res_json['articles'])
+    for pageNum in range(1, totalPages):
+        print "Getting page %d/%d pages" % (pageNum, totalPages)
+        params['page'] = pageNum
+        response = requests.get(buildUrl(), params = params)
+    
+        res_json = json.loads(response.text)
+
+        if (res_json is not None and
+            res_json['status'] == 'ok'):
+            articles.extend(res_json['articles'])
+
+
     return articles
