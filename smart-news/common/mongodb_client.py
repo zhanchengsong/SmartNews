@@ -10,7 +10,7 @@ client = MongoClient(MONGO_DB_HOST+":"+ MONGO_DB_PORT)
 
 def get_db (db = DB_NAME):
     db = client[db]
-    db.authenticate("backendserver","diet4coke")
-    print("db connection info: ")
+    db.authenticate("news-deduper","diet4coke")
+    # print("db connection info: ")
     print(db)
     return db

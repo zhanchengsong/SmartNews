@@ -31,10 +31,8 @@ def handle_message(msg):
     if (article.cleaned_text == None or len ( article.cleaned_text ) <=0):
         print("Goose unsupoorted source ")
         task['text'] = task['content']
-
-
-
-    task['text'] = article.cleaned_text
+    else:
+        task['text'] = article.cleaned_text
 
     dedupe_news_queue_client.sendMessage(task)
 

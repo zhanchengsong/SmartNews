@@ -38,12 +38,12 @@ class NewsPanel extends React.Component{
         fetch(request)
             .then ((res) => res.json())
             .then(news => {
-                console.log(news)
+
                 var newsObj = JSON.parse ( news['result'] )
-                console.log(newsObj)
+
                 this.setState({
 
-                    news: this.state.news? this.state.news.concat(newsObj) : newsObj
+                    news: newsObj
                 })
             })
     }
@@ -51,7 +51,9 @@ class NewsPanel extends React.Component{
 
     renderNews() {
         let news_list = this.state.news.map(function(news) {
+
             return(
+
                 <a className='list-group-item' key = {news.digest} href="#">
                     <NewsCard news={news} />
                 </a>

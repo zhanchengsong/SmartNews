@@ -58,7 +58,7 @@ def handle_message(msg):
     if title is not None:
         topic = recommandation_client.classify(title)
         task['class'] = topic
-
+    print("WRITING TO DB")
     db[NEWS_TABLE_NAME].replace_one({'digest': task['digest']}, task, upsert=True)
 
 

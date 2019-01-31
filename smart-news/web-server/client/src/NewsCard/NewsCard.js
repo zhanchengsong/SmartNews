@@ -2,6 +2,7 @@ import React from 'react';
 import './NewsCard.css';
 class NewsCard extends React.Component{
     render() {
+        //console.log("NewsCard data: " + this.props.news)
         return(
             <div className="news-container" onClick={() => this.redirectToUrl(this.props.news.url)}>
                 <div className="row">
@@ -15,8 +16,8 @@ class NewsCard extends React.Component{
                                 <div className="news-description">
                                     <p>{this.props.news.description}</p>
                                     <div>
-                                        {this.props.news.source != null && <div className='chip light-blue news-chip'>{this.props.news.source}</div>}
-                                        {this.props.news.reason != null && <div className='chip light-green news-chip'>{this.props.news.reason}</div>}
+                                        {this.props.news.source != null && <div className='chip light-blue news-chip'>{this.props.news.source.name}</div>}
+                                        {this.props.news.reason != null && <div className='chip light-green news-chip'>{this.props.news.class}</div>}
                                         {this.props.news.class != null && <div className='chip light-red news-chip'>{this.props.news.class}</div>}
                                         {this.props.news.time != null && <div className='chip amber news-chip'>{this.props.news.time}</div>}
                                     </div>
