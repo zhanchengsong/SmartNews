@@ -4,6 +4,7 @@ import NewsPanel from '../NewsPanel/NewsPanel'
 import 'materialize-css/dist/css/materialize.css'
 import 'materialize-css/dist/js/materialize.js'
 import './App.css';
+import Navbar from '../Navbar/navbar'
 
 class App extends Component {
   render() {
@@ -11,7 +12,8 @@ class App extends Component {
         <div>
             {/*<img className='logo' src={logo} alt='logo'/>*/}
             <div className='container'>
-                <NewsPanel />
+
+                <NewsPanel/>
             </div>
         </div>
     );
