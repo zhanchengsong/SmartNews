@@ -37,7 +37,7 @@ class SignUpPage extends React.Component {
     }
 
     // Post registeration data
-    fetch('http://localhost:3000/auth/signup', {
+    fetch('http://news.newgrad-developer.com:3005/auth/signup', {
       method: 'POST',
       cache: 'no-cache',
       headers: {

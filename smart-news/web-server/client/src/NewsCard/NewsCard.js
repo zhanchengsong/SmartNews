@@ -4,7 +4,7 @@ import Auth from '../Auth/Auth'
 class NewsCard extends React.Component{
 
     sendClickLog() {
-        let url = 'http://localhost:3000/news/userId/' + Auth.getEmail()
+        let url = 'http://news.newgrad-developer.com:3005/news/userId/' + Auth.getEmail()
               + '/newsId/' + this.props.news.digest;
 
         let request = new Request(encodeURI(url), {

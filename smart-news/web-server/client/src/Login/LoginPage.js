@@ -33,7 +33,7 @@ class LoginPage extends React.Component {
     console.log('password:', password);
 
     // Post login data
-    fetch('http://localhost:3000/auth/login', {
+    fetch('http://news.newgrad-developer.com:3005/auth/login', {
       method: 'POST',
       cache: 'no-cache',
       headers: {
